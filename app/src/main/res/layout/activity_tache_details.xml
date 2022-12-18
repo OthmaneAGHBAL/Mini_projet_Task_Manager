@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    tools:context=".activity_tache_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTOadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_item_states"
+                android:drawableEnd="@drawable/ic_baseline_add_circle_24"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/btnTOhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_item_states"
+                android:drawableEnd="@drawable/ic_baseline_home_24"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="home" />
+
+            <Button
+                android:id="@+id/btnTOlogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_item_states"
+                android:drawableEnd="@drawable/ic_baseline_logout_24"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Logout" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/darker_gray"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="75dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details du tache"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:textColor="@color/text_color2"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="15dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Label :"
+                android:textStyle="bold"
+                android:textColor="@color/text_color2"
+                android:textSize="20dp"
+
+                />
+            <TextView
+                android:id="@+id/label_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="xxxxxxxxxxxxxxxxx"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description :"
+                android:textStyle="bold"
+                android:textColor="@color/text_color2"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+
+                />
+            <TextView
+                android:id="@+id/description_content"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                android:gravity="top|center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Durée :"
+                android:textStyle="bold"
+                android:textColor="@color/text_color2"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+
+                />
+            <TextView
+                android:id="@+id/time_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2h:30min"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Priorité :"
+                android:textStyle="bold"
+                android:textColor="@color/text_color2"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+
+                />
+            <TextView
+                android:id="@+id/priority_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="urgent , important"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/text_color1"
+                android:background="@drawable/round_button"
+                android:paddingLeft="40dp"
+                android:layout_marginRight="15dp"
+                android:paddingRight="40dp"
+                android:text="Modifier"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+            <Button
+                android:id="@+id/doneBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="Réaliser"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

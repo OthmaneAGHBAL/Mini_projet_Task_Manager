@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="199dp"
+        android:layout_height="94dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/logo_task_manager_01" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inscription"
+        android:textColor="@color/text_color1"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom utilisateur :"
+        android:textColor="@color/text_color2"
+        android:textSize="23dp"
+        android:gravity="left"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <EditText
+        android:id="@+id/editNom"
+        android:layout_width="fill_parent"
+        android:hint="Tapez votre nom "
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/MotPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mot de passe :"
+        android:textColor="@color/text_color2"
+        android:textSize="23dp"
+        android:gravity="left"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        />
+    <EditText
+        android:id="@+id/editMotPass"
+        android:layout_width="fill_parent"
+        android:hint="Tapez votre mot de passe "
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="text" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:textColor="@color/text_color2"
+        android:textSize="23dp"
+        android:gravity="left"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        />
+    <EditText
+        android:id="@+id/editMail"
+        android:layout_width="fill_parent"
+        android:hint="Tapez email ? "
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="text" />
+
+
+    <Button
+        android:id="@+id/button_inscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_button"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="Inscription"
+        android:textSize="18dp"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compte deja existant ?"
+            android:textColor="@color/text_color2"
+            android:textSize="18dp"
+
+            android:gravity="left"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:id="@+id/toConnexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se connecter"
+            android:textColor="@color/text_color1"
+            android:textSize="18dp"
+            android:gravity="left"
+            android:clickable="true"
+            />
+    </LinearLayout>
+
+</LinearLayout>

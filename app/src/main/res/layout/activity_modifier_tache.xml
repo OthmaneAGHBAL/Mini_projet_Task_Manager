@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    tools:context=".activity_tache_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTOadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_item_states"
+                android:drawableEnd="@drawable/ic_baseline_add_circle_24"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/btnTOhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_item_states"
+                android:drawableEnd="@drawable/ic_baseline_home_24"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="home" />
+
+            <Button
+                android:id="@+id/btnTOlogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_item_states"
+                android:drawableEnd="@drawable/ic_baseline_logout_24"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Logout" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/darker_gray"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="75dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier la tache"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:textColor="@color/text_color2"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            />
+
+
+        <EditText
+            android:id="@+id/taskLabelModif"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/taskDescriptionModif"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/white"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="20"
+            android:layout_marginTop="20dp"
+            android:scrollHorizontally="false" />
+        <EditText
+            android:id="@+id/taskTimeModif"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La priorité de la tache :"
+            android:layout_marginLeft="35dp"
+            android:textSize="18dp"
+            android:textColor="@color/text_color1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <RadioGroup
+            android:id="@+id/priorityRadioGrp"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/priority1"
+                android:background="@color/priority_1"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="urgent , important"
+                android:layout_marginTop="5dp"
+                />
+
+            <RadioButton
+                android:id="@+id/priority2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="urgent , pas important"
+                android:background="@color/priority_2"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"/>
+            <RadioButton
+                android:id="@+id/priority3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pas urgent , important"
+                android:background="@color/priority_3"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <RadioButton
+                android:id="@+id/priority4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pas urgent , pas important"
+                android:background="@color/priority_4"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"/>
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/updateTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:text="Modifier"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
